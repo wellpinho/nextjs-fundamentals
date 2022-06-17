@@ -1,17 +1,19 @@
-import Link from "next/link";
-import styles from "../../styles/about.module.scss";
+import { MainLayout } from "../../components/layout/main";
+import { Navegation } from "../../components/navegation";
 
 export default function Contact() {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>
-        Ir a <Link href="/">Home</Link>
-      </h1>
-
-      <p className={styles.description}>
-        Get started by editing{" "}
-        <code className={styles.code}>pages/contact.tsx</code>
-      </p>
-    </div>
+    <>
+      <Navegation />
+      <MainLayout>
+        <h1>Contact page</h1>
+        <h2 className="title">
+          Ir a <a href="/">Home</a>
+        </h2>
+        <p className="description">
+          Get started by <code className="code">pages/contact/index.js</code>
+        </p>
+      </MainLayout>
+    </>
   );
 }
