@@ -1,9 +1,21 @@
 html,
 body {
+  background-color: var(--gray-900);
+  color: var(--gray-100);
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+:root {
+  --white: #ffffff;
+  --gray-100: #e1e1e6;
+  --gray-400: #a8a8b3;
+  --gray-700: #1f2729;
+  --gray-900: #121214;
+  --cyan-700: #61dafd;
+  --yellow-700: #eba417;
 }
 
 a {
