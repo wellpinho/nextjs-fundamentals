@@ -1,0 +1,17 @@
+.nav {
+  ul {
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    margin-right: 10px;
+    transition: 0.2s;
+    color: var(--gray-100);
+
+    &:hover {
+      color: var(--yellow-700);
+    }
+  }
+}
