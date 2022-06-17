@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { MainLayout } from "../../components/layout/main";
 import { Navegation } from "../../components/navegation";
 
@@ -8,7 +9,7 @@ export default function About() {
       <MainLayout>
         <h1>About page</h1>
         <h2 className="title">
-          Ir a <a href="/">Home</a>
+          Ir a <Link href="/">Home</Link>
         </h2>
         <p className="description">
           Get started by <code className="code">pages/about/index.js</code>

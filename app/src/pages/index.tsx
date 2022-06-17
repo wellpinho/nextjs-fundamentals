@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { MainLayout } from "../components/layout/main";
 import { Navegation } from "../components/navegation";
-import { Pricing } from "./pricing";
 
 const Home: NextPage = () => {
   return (
@@ -19,8 +18,6 @@ const Home: NextPage = () => {
 
       <MainLayout>
         <h1>Home page</h1>
-        <h2>Exercício #1</h2>
-        <Pricing />
       </MainLayout>
     </div>
   );

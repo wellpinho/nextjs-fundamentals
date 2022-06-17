@@ -1,4 +1,8 @@
-export function LightTheme({ children }: any) {
+type Props = {
+  children: React.ReactNode;
+};
+
+export const DarkTheme = ({ children }: Props) => {
   return (
     <div
       style={{
@@ -7,8 +11,8 @@ export function LightTheme({ children }: any) {
         borderRadius: "5px",
       }}
     >
-      <h2>Light Theme</h2>
+      <h2>Dark Theme</h2>
       {children}
     </div>
   );
-}
+};
