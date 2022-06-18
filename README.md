@@ -32,3 +32,35 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+For create your docker image first you next.config.js need equal to this code.
+
+```
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  experimental: {
+    outputStandalone: true,
+  },
+};
+
+module.exports = nextConfig;
+```
+
+edit package.json
+`"start": "next start -p ${PORT:=3000}",`
+
+For create project docker run command
+`docker build -t projectName .`
+
+Docker image up command
+`docker run --name=next-app -p 3000:3000 nextjs-initial`
+
+Now access the app http://localhost:3000
+
+Remove image docker
+list images: `docker image ls`
+Remove image id: `docker image rmi your-image-id`
+
+list container: `docker container ls`
+remove container: `docker container rm your-container-id`
